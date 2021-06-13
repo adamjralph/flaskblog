@@ -10,9 +10,8 @@ from flask_sqlalchemy import SQLAlchemy
 from forms import RegistrationForm, LoginForm
 
 app = Flask(__name__)
-
 app.config['SECRET_KEY'] = '008c5fb26b126840a90252e5e98c8caa'
-app.config['SQLALCEHEMY_DATABASE_URL'] = 'sqlite:///site.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 db = SQLAlchemy(app)
 
 class User(db.Model):
