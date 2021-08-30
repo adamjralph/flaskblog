@@ -5,7 +5,7 @@ from flask import (
     redirect
 )
 
-from flaskblog import app
+from flaskblog import app, db, bcrypt
 from flaskblog.forms import RegistrationForm, LoginForm
 from flaskblog.models import User, Post
 
